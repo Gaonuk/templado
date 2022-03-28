@@ -28,7 +28,7 @@ jobs:
         run: npm i -g yarn
 
       - name: Install dependencies
-        run: yarn
+        run: make
 
       - name: Show Foundry config
         run: forge config
@@ -37,4 +37,4 @@ jobs:
         run: yarn lint
 
       - name: Run tests
-        run: FOUNDRY_PROFILE=ci yarn test
+        run: FOUNDRY_PROFILE=ci yarn tester

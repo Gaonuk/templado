@@ -7,11 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "setup": "make clean && make build",
-    "sync": "make update",
-    "test": "make test",
-    "snapshot": "make snapshot",
-    "lint": "make lint"
+    "tester": "make tester",
+    "lint": "make lint",
+    "setup": "make setup"
   },
   "keywords": [],
   "author": "",
