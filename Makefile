@@ -14,7 +14,7 @@ remove :; rm -rf .gitmodules && rm -rf .git/modules/* && rm -rf lib && touch .gi
 install-forge-deps :; forge install # dapphub/ds-test && forge install rari-capital/solmate && forge install brockelmore/forge-std && forge install ZeframLou/clones-with-immutable-args
 
 # Install the Dependencies
-install-deps :; yarn install
+install-deps :; npm install
 
 # Update Dependencies
 update:; forge update

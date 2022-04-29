@@ -24,9 +24,6 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Install yarn
-        run: npm i -g yarn
-
       - name: Install dependencies
         run: make
 
@@ -34,7 +31,7 @@ jobs:
         run: forge config
         
       - name: Check contracts are linted
-        run: yarn lint
+        run: npm run lint
 
       - name: Run tests
-        run: FOUNDRY_PROFILE=ci yarn tester
+        run: FOUNDRY_PROFILE=ci npm run tester
