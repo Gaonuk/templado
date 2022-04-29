@@ -20,7 +20,7 @@ install-deps :; npm install
 update:; forge update
 
 # Builds
-build  :; forge clean && forge build --optimize --optimize-runs 1000000
+build  :; forge clean && forge build --optimize --optimizer-runs 1000000
 
 # chmod scripts
 scripts :; chmod +x ./scripts/*
@@ -35,7 +35,7 @@ test-gasreport 	:; forge test --gas-report
 lint :; prettier --write contracts/**/*.sol && prettier --write contracts/*.sol
 
 # Generate Gas Snapshots
-snapshot :; forge clean && forge snapshot --optimize --optimize-runs 1000000
+snapshot :; forge clean && forge snapshot --optimize --optimizer-runs 1000000
 
 # Fork Mainnet With Hardhat
 mainnet-fork :; npx hardhat node --fork ${ETH_MAINNET_RPC_URL}
