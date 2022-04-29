@@ -26,7 +26,7 @@ build  :; forge clean && forge build --optimize --optimize-runs 1000000
 scripts :; chmod +x ./scripts/*
 
 # Tests
-tester   :; forge clean && forge test --optimize --optimize-runs 1000000 -v # --ffi # enable if you need the `ffi` cheat code on HEVM
+tester   :; forge clean && forge test --optimize --optimizer-runs 1000000 -v # --ffi # enable if you need the `ffi` cheat code on HEVM
 
 # Tests with Gas Report
 test-gasreport 	:; forge test --gas-report
