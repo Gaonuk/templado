@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "dotenv": "^16.0.0",
-    "ds-test": "file:lib/ds-test",
     "forge-std": "file:lib/forge-std",
     "hardhat-deploy": "^0.11.2",
     "prettier": "^2.6.1",
